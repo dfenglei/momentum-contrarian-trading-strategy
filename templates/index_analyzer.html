@@ -1,0 +1,13 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+<center>
+  <h2>基准指数:</h2>
+  <div class="well input">{{ input }}</div>
+  <h2>分析结果图:</h2>
+  <iframe src={{ filename }} frameborder="0" align="middle" height="600" width="800"></iframe>
+  <h3><a href="/"> 返回</a></h3>
+</center>
+
+{% endblock %}
